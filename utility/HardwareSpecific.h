@@ -33,7 +33,9 @@
 		#ifdef COMPILE_DEBUG
 			#warning "COMPILEDEBUG 4: PLATFORM_AC6 NOT DEFINED"
 		#endif
-		#define PLATFORM_ARDUINO
+		#ifndef PLATFORM_STM32_VSCODE
+			#define PLATFORM_ARDUINO
+		#endif
 	#endif
 
 	#ifdef PLATFORM_AC6
