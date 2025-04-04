@@ -16,6 +16,14 @@ set(YRShell_Include_Dirs
 # YRShell generated application sources
 set(YRShell_Application_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/YRShell.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/utility/YRShellInterpreter.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/utility/DebugLog.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/utility/Dictionary.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/utility/HardwareSpecific.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/utility/HiResTimer.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/utility/IntervalTimer.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/utility/Sliceable.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/utility/BufferedSerial.cpp
 )
 
 # Link directories setup
