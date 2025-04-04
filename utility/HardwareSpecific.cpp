@@ -101,7 +101,7 @@ uint32_t HW_getSysTicksPerSecond( ) {
 }
 #endif
 
-#ifdef PLATFORM_AC6
+#if defined (PLATFORM_AC6) || (PLATFORM_STM32_VSCODE)
 
 uint32_t HW_getSysticks() {
 	// int irqMask = __disable_irq();

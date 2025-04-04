@@ -45,6 +45,13 @@
 		#include "processorGlobal.h"
 	#endif
 
+	#ifdef PLATFORM_STM32_VSCODE
+		#ifdef COMPILE_DEBUG
+			#warning "COMPILEDEBUG 5: PLATFORM_STM32_VSCODE DEFINED"
+		#endif
+		#include "processorGlobal.h"
+	#endif
+
 	#ifdef PLATFORM_ARDUINO
 		#ifdef COMPILE_DEBUG
 			#warning "COMPILEDEBUG 6: PLATFORM_ARDUINO DEFINED"

@@ -6,7 +6,7 @@ DictionaryError::DictionaryError( ) {
 DictionaryError::~DictionaryError( ) {
 }
 
-void DictionaryError::shellERROR( const char* name, unsigned line) {
+void DictionaryError::shellERROR( const char* , unsigned ) {
 }
 
 DictionaryError* Dictionary::s_DictionaryError = NULL;
@@ -25,27 +25,27 @@ uint16_t Dictionary::getFirstEntry( ) {
     shellERROR(__FILE__, __LINE__);
     return YRSHELL_DICTIONARY_INVALID;
 }
-uint16_t Dictionary::getNextEntry( uint16_t index){
+uint16_t Dictionary::getNextEntry( uint16_t ){
     shellERROR(__FILE__, __LINE__);
     return YRSHELL_DICTIONARY_INVALID;
 }
-uint16_t Dictionary::getToken( uint16_t index){
+uint16_t Dictionary::getToken( uint16_t ){
     shellERROR(__FILE__, __LINE__);
     return YRSHELL_DICTIONARY_INVALID;
 }
-uint16_t Dictionary::getNameAddressToken( uint16_t index){
+uint16_t Dictionary::getNameAddressToken( uint16_t ){
     shellERROR(__FILE__, __LINE__);
     return YRSHELL_DICTIONARY_INVALID;
 }
-uint16_t Dictionary::getWord( uint16_t index) {
+uint16_t Dictionary::getWord( uint16_t ) {
     shellERROR(__FILE__, __LINE__);
     return YRSHELL_DICTIONARY_INVALID;
 }
-const char* Dictionary::getAddress( uint16_t index){
+const char* Dictionary::getAddress( uint16_t ){
     shellERROR(__FILE__, __LINE__);
     return NULL;
 }
-uint16_t Dictionary::find( const char* name) {
+uint16_t Dictionary::find( const char* ) {
     shellERROR(__FILE__, __LINE__);
     return YRSHELL_DICTIONARY_INVALID;
 }
