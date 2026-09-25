@@ -1361,7 +1361,9 @@ void YRShellInterpreter::executeFunction( uint16_t n) {
     bool b;
     int32_t i;
     uint32_t v1, v2, v3;
+#ifdef YRSHELL_INTERPRETER_FLOATING_POINT
     float f1, f2;
+#endif
     const char *P, *M;
     Sliceable *S;
 
