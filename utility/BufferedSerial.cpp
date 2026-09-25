@@ -149,7 +149,7 @@ BufferedSerial::STM32SerialError BufferedSerial::halStatusToError(HAL_StatusType
 
 #ifdef ENABLE_SERIAL1
 extern UART_HandleTypeDef huart1;
-BufferedSerial BSerial1( huart1);
+BufferedSerial BSerial1( &huart1);
 #endif
 #ifdef ENABLE_SERIAL2
 extern UART_HandleTypeDef huart2;
@@ -157,6 +157,6 @@ BufferedSerial BSerial2( &huart2);
 #endif
 #ifdef ENABLE_SERIAL3
 extern UART_HandleTypeDef huart3;
-BufferedSerial BSerial3( huart3);
+BufferedSerial BSerial3( &huart3);
 #endif
 #endif
