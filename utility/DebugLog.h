@@ -1,6 +1,9 @@
 #ifndef DebugLog_h
 #define DebugLog_h
 
+#include "CircularQ.h"
+#include <stdint.h>
+
 #ifndef DEBUG_LOG_BUFFER_SIZE
 #define DEBUG_LOG_BUFFER_SIZE 8192
 #endif

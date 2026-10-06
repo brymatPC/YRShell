@@ -3,6 +3,8 @@
 #include "YRShellInterpreter.h"
 #include "print.h"
 
+#ifdef NO_SHELL
+
 uint8_t	YRShellInterpreter::s_shellNumber = 0;
 /*
  
@@ -3219,3 +3221,4 @@ void YRShellInterpreter::setPrompt( const char* prompt ) {
     m_prompt = prompt;
 }
 
+#endif // #ifdef NO_SHELL
