@@ -376,15 +376,7 @@ public:
     CircularQBase<char>& getAuxInq( void);
     CircularQBase<char>& getOutq(void);
     CircularQBase<char>& getAuxOutq(void);
-    
-    static char charToHex( char c);
-    static void intToString(int32_t n, uint8_t numDigits, char *s);
-    static void unsignedToStringZero(uint32_t num, uint8_t numDigits, char *s);
-    static void unsignedToString(uint32_t num, uint8_t numDigits, char *s);
-    static void unsignedToStringX(uint32_t num, uint8_t numDigits, char *s);
-    static const char* stringToUnsignedInternal( const char* P, uint32_t* V);
-    static bool stringToUnsigned( const char* P, uint32_t* V);
-    static bool stringToUnsignedX( const char* P, uint32_t* V);
+
 #ifdef YRSHELL_INTERPRETER_FLOATING_POINT
     bool stringToFloat( const char* P, uint32_t* V);
     void floatToString( float num, char *s);

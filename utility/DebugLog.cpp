@@ -1,4 +1,5 @@
 #include "DebugLog.h"
+#include "print.h"
 
 void DebugLog::printHexLine( const char* P, int len) {
     int i, j;
@@ -43,11 +44,11 @@ void DebugLog::out( const char* s) {
     }
 }
 void DebugLog::out( uint32_t v, uint32_t n) {
-    YRShellInterpreter::unsignedToString( v, n, m_buf);
+    unsignedToString( v, n, m_buf);
     out( m_buf);
 }
 void DebugLog::outX( uint32_t v, uint32_t n) {
-    YRShellInterpreter::unsignedToStringX( v, n, m_buf);
+    unsignedToStringX( v, n, m_buf);
     out( m_buf);
   }
 void DebugLog::outPaddedStr( const char* p, uint32_t len) {

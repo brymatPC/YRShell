@@ -5,8 +5,6 @@
 #define DEBUG_LOG_BUFFER_SIZE 8192
 #endif
 
-#include "YRShellInterpreter.h"
-
 class DebugLog {
 protected:
   char m_buf[24];

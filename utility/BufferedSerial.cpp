@@ -1,5 +1,5 @@
 #include "BufferedSerial.h"
-#include "YRShellInterpreter.h"
+
 #ifdef PLATFORM_ARDUINO
 BufferedSerial::BufferedSerial( HardwareSerial* hs) {
 	m_hs = hs; 
